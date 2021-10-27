@@ -1,6 +1,6 @@
-# STOREFRONT
+# Backend
 
-This is a storefront API.
+This is a Backend API.
 It has: Categories & Products.
 
 ## Getting Started:
