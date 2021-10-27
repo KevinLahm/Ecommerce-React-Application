@@ -15,7 +15,7 @@ class Api::V1::CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
-      render json: @category, status: :created, location: @category
+      render json: @category, status: :created, location: @api_v1_category
     else
       render json: @category.errors, status: :unprocessable_entity
     end
