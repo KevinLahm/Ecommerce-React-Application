@@ -4,6 +4,11 @@ class Api::V1::ProductsController < ApplicationController
   def index
     @products = Product.all
 
+    @search = params['search']
+    if @search.present?
+      @category_id = @search['category_id']
+      @products = Product.where("category_id ILIKE ?", "#{@category_id}")
+    end
     render json: @products
   end
 
