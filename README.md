@@ -27,4 +27,18 @@ http://localhost:3001/api/v1/products
 
 http://localhost:3001/api/v1/categories
 ```
-* To see the front-end part, open terminal in a new tab, cd to the ReactJS App and run 'npm start' then go to localhost:3000.
+# Frontend
+
+In the project directory, you can run:
+
+### `npm start`
+NB: If you encounter an error run npm install react-scripts --save then proceed with npm start
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+NB: Make sure the backend and frontend runs in different ports as indicated
+
