@@ -9,7 +9,7 @@ import {
 const ProductDetails = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
-  const { image, name, price, category_id, description, quantity, id } = product;
+  const { image, name, price, description, quantity, id } = product;
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
